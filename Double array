@@ -1,0 +1,46 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <math.h>
+using namespace std;
+int i,j,a,b,q1,q2,q3,input,array_element;
+
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    cin >>  a >> b;
+    if (a >= 1 && a <= pow(10,5)){
+        int **array;
+        array=new int*[a]();
+        if (b >= 1 && b <= pow(10,5)){
+            for (i=0;i<a;i++){
+                
+                cin >> input;
+                array[i]=new int [b];
+                for (j=0;j<input;j++){
+                    
+                    cin >> array_element;
+                    array[i][j]=array_element;
+                    //cout << array[i][j];
+                }     
+                }
+            for (q1=0;q1<b;q1++){
+                cin >> q2 >> q3;
+                cout << array[q2][q3] << endl;
+                
+            }
+               
+            
+            
+                
+            
+            
+        
+    }
+    }
+        
+    return 0;
+}
